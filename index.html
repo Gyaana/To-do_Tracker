@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.js"></script>
+  <!-- FullCalendar Styles -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+
+<!-- FullCalendar and Moment.js Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+//
+</head>
+<body>
+  <div class="container my-4">
+    <h1 class="text-center">To-Do Tracker</h1>
+
+    <!-- Task Form -->
+    <div class="my-4">
+      <form id="taskForm" class="row g-3">
+        <div class="col-md-4">
+          <label for="taskName" class="form-label">Task Name</label>
+          <input type="text" class="form-control" id="taskName" placeholder="Enter task name" required>
+        </div>
+        <div class="col-md-4">
+          <label for="taskDeadline" class="form-label">Deadline</label>
+          <input type="date" class="form-control" id="taskDeadline" required>
+        </div>
+        <div class="col-md-4 align-self-end">
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Calendar -->
+    <div id="calendar"></div>
+    <script src="script.js"></script>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

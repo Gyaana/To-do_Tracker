@@ -1,0 +1,44 @@
+/* Styles for the heart icons */
+.heart {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.heart.green {
+  color: green;
+}
+
+.heart.red {
+  color: red;
+}
+
+.heart.brown {
+  color: brown;
+}
+
+.heart.black {
+  color: black;
+}
+
+/* Center the page content */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#calendar {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
