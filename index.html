@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- The <!DOCTYPE html> declaration defines this document as an HTML5 document. -->
-<!-- The <html lang="en"> element specifies that the language of the document is English. -->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do Tracker</title>
-
-  <!-- External CSS Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Custom CSS for additional styling -->
-
-  <!-- JavaScript Libraries -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/fullcalendar.min.js"></script>
-</head>
+  <!-- FullCalendar Styles -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
 
+<!-- FullCalendar and Moment.js Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+//
+</head>
 <body>
-  <!-- Main Container -->
   <div class="container my-4">
     <h1 class="text-center">To-Do Tracker</h1>
 
-    <!-- Task Form Section -->
+    <!-- Task Form -->
     <div class="my-4">
       <form id="taskForm" class="row g-3">
-        
-        <!-- Task Name Input -->
         <div class="col-md-4">
           <label for="taskName" class="form-label">Task Name</label>
           <input type="text" class="form-control" id="taskName" placeholder="Enter task name" required>
         </div>
-
-        <!-- Task Deadline Input -->
         <div class="col-md-4">
           <label for="taskDeadline" class="form-label">Deadline</label>
           <input type="date" class="form-control" id="taskDeadline" required>
         </div>
-
-        <!-- Submit Button -->
         <div class="col-md-4 align-self-end">
           <button type="submit" class="btn btn-primary">Add Task</button>
         </div>
       </form>
     </div>
 
-    <!-- Calendar Section -->
+    <!-- Calendar -->
     <div id="calendar"></div>
+    <script src="script.js"></script>
   </div>
 
-  <!-- External JavaScript Files -->
-  <script src="script.js"></script> <!-- Script to handle task functionality -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="app.js"></script> <!-- Additional JavaScript functionality -->
+  <script src="app.js"></script>
 </body>
 </html>
